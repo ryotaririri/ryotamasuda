@@ -46,7 +46,7 @@ export default {
 <style scoped lang="stylus">
 span
   position absolute
-  left 11px
+  right 11px
   width 18px
   height 1px
   background-color #111
