@@ -25,9 +25,6 @@
         li
           nuxt-link(to="/about")
             |About
-        li
-          nuxt-link(to="/contact")
-            |Contact
 </template>
 
 <script>
