@@ -41,10 +41,14 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.navbar-brand
+  position relative
+  top 12px
+
 span
   position absolute
-  right 11px
-  width 18px
+  right 30px
+  width 24px
   height 1px
   background-color #111
   transition all .6s
@@ -58,31 +62,33 @@ span
   top 26px
 
 .is-active .span1
-  transform rotate(45deg)
+  transform rotate(-45deg)
   top 20px
   background-color white
 .is-active .span2
   width 0
-  left 50%
+  left 100%
 .is-active .span3
-  transform rotate(-45deg)
+  transform rotate(45deg)
   top 20px
   background-color white
 
 .nav-wrap
   position fixed
   top -100%
-  right 0
   width 100vw
   height 100vh
   transition all .6s
 
 .is-active .nav-wrap
   top 0
+  line-height 2.8
 
 ul.gnav
   list-style none
   position relative
+  top 90px
+  left 90px
   z-index 9999
   li
     margin 5.4%
