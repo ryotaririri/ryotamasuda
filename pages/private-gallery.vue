@@ -7,6 +7,14 @@
     .arrow
 </template>
 
+<script>
+export default {
+  fetch ({store}) {
+    store.commit('resetMenu')
+  }
+}
+</script>
+
 <style scoped lang="stylus">
 .firsttext
 .secondtext
@@ -25,7 +33,7 @@ p
   animation 2s arrow-animation infinite ease-in-out
   width 0
   height 5em
-  border .5px solid #F5F5F5
+  border .5px solid #000
   &::after
     content ''
     display block
@@ -34,7 +42,7 @@ p
     left -2px
     width 1px
     height 10px
-    border-top 10px solid #F5F5F5
+    border-top 10px solid #000
     border-left 2px solid transparent
     border-right 2px solid transparent
 
@@ -43,7 +51,6 @@ p
     height:1vh
   100% 
     height:5vh
-  
 </style>
 
 

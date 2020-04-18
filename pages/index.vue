@@ -2,9 +2,10 @@
   .container
     .firstvue
       img(src="~assets/images/index/indextop.JPG")
+      p Ryota Masuda
     .secondvue
       .twitter
-        a(href="https://twitter.com/ririri_photo")
+        a(href="https://twitter.com/ryota__masuda")
           img(src="~assets/images/index/twitter.png")
           p Twitter
       .instagram
@@ -23,7 +24,10 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  fetch ({store}) {
+    store.commit('resetMenu')
+  },
 }
 </script>
 
@@ -31,18 +35,44 @@ export default {
 .firstvue img
   width 100vw
   height 100vh
+  position relative
   overflow hidden
+  animation fadein 2s ease 0s 1 normal
+
+@keyframes fadein
+  0% 
+    opacity:0
+  100% 
+    opacity:1
+
+.firstvue p
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
+  opacity 0
+  animation fadein 3s ease 3s 1 normal
+  animation-fill-mode forwards
+
+.twitter
+  margin-top 10%
 
 .twitter
 .instagram
 .lovegraph
-  width 100%
   height 10vh
-  position relative
   
   img
     width 7vw
+  p
+    margin-top 0.5%
+    margin-left 10%
+
 a
   display flex
-  justify-content center
+  justify-content flex-start
+  width 25%
+  color black
+  text-decoration none
+  margin 0 auto
 </style>
