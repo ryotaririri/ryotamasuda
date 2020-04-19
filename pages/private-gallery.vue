@@ -1,10 +1,24 @@
 <template lang="pug">
-.firstvue
-  .firsttext
-    p Private gallery
-  .secondtext
-    p Scroll
-    .arrow
+.container
+  .area
+    .firstvue
+      .firsttext
+        p Private gallery
+      .secondtext
+        p Scroll
+        .arrow
+  .area
+    .secondvue
+      nuxt-link(to="/pv-first")
+        img(src="~assets/images/index/pvarea/okinawa/okinawatop.JPG")
+  .area
+    .secondvue
+      nuxt-link(to="/pv-second")
+        img(src="~assets/images/index/pvarea/kamon/kamontop.JPG")
+  .area
+    .secondvue
+      nuxt-link(to="/pv-third")
+        img(src="~assets/images/index/pvarea/newyear/newyeartop.JPG")
 </template>
 
 <script>
@@ -16,35 +30,61 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.firsttext
-.secondtext
-  width 100%
-  height 10vh
+.container
   position relative
+  scroll-snap-type mandatory
+  scroll-snap-points-y repeat(100vh)
+  scroll-snap-type y mandatory
+  height 100vh
+  width 100%
+  -webkit-overflow-scrolling touch
+  overflow-scrolling touch
+  overflow-y scroll
+  overflow-x hidden
+  text-align center
 
-p
-  display flex
-  justify-content center
-
-.arrow
-  position absolute
-  top 1.25em
-  left 1em
-  animation 2s arrow-animation infinite ease-in-out
-  width 0
-  height 5em
-  border .5px solid #000
-  &::after
-    content ''
-    display block
-    position absolute
-    top 100%
-    left -2px
-    width 1px
-    height 10px
-    border-top 10px solid #000
-    border-left 2px solid transparent
-    border-right 2px solid transparent
+  .area
+    position relative
+    height 100%
+    width 100%
+    scroll-snap-align start
+    text-align center
+    .firsttext p
+      position relative
+      display flex
+      justify-content center
+    .secondtext
+      width 100%
+      height 10vh
+      position relative
+      p
+        position relative
+        height 100vh
+        display flex
+        justify-content center
+    .arrow
+      position absolute
+      top 1.25em
+      left 1em
+      animation 2s arrow-animation infinite ease-in-out
+      width 0
+      height 5em
+      border .5px solid #000
+      &::after
+        content ''
+        display block
+        position absolute
+        top 100%
+        left -2px
+        width 1px
+        height 10px
+        border-top 10px solid #000
+        border-left 2px solid transparent
+        border-right 2px solid transparent
+          
+    img
+      height 100vh
+      overflow hidden
 
 @keyframes arrow-animation 
   0%
@@ -52,7 +92,3 @@ p
   100% 
     height:5vh
 </style>
-
-
-
-
