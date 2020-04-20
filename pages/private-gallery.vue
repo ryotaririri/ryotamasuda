@@ -50,18 +50,19 @@ export default {
     scroll-snap-align start
     text-align center
     .firsttext p
-      position relative
-      display flex
-      justify-content center
+      position absolute
+      top 40%
+      left 50%
+      transform translate(-50%,-50%)
     .secondtext
       width 100%
       height 10vh
       position relative
       p
-        position relative
-        height 100vh
-        display flex
-        justify-content center
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
     .arrow
       position absolute
       top 1.25em

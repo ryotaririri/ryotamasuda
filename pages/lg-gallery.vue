@@ -18,11 +18,11 @@
   .area
     .secondvue
       nuxt-link(to="/lg-third")
-        img(src="~assets/images/index/lgarea/lgthird/thirdtop.JPG")   
+        img(src="~assets/images/index/lgarea/lgthird/thirdtop.JPG")
   .area
     .secondvue
       nuxt-link(to="/lg-fourth")
-        img(src="~assets/images/index/lgarea/lgfourth/fourthtop.JPG")  
+        img(src="~assets/images/index/lgarea/lgfourth/fourthtop.JPG") 
   .area
     .secondvue
       nuxt-link(to="/lg-fifth")
@@ -59,15 +59,17 @@ export default {
     scroll-snap-align start
     text-align center
     .firsttext p
-      position relative
-      display flex
-      justify-content center
+      position absolute
+      top 40%
+      left 50%
+      transform translate(-50%,-50%)
     .secondtext
       width 100%
       height 10vh
       position relative
       p
         position relative
+        top 40%
         height 100vh
         display flex
         justify-content center
@@ -76,7 +78,7 @@ export default {
       top 1.25em
       left 1em
       animation 2s arrow-animation infinite ease-in-out
-      width 0
+      width 0%
       height 5em
       border .5px solid #000
       &::after
