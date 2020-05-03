@@ -60,25 +60,25 @@ export default {
     text-align center
     .firsttext p
       position absolute
-      top 40%
+      top 30%
       left 50%
       transform translate(-50%,-50%)
     .secondtext
       width 100%
-      height 10vh
+      height 50vh
       position relative
       p
         position relative
-        top 40%
+        top 100%
         height 100vh
         display flex
         justify-content center
     .arrow
       position absolute
-      top 1.25em
-      left 1em
+      top 30em
+      left 11.5em
       animation 2s arrow-animation infinite ease-in-out
-      width 0%
+      width 0
       height 5em
       border .5px solid #000
       &::after
