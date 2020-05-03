@@ -2,6 +2,9 @@
 
 > My shining Nuxt.js project
 
+## Production
+https://ryota-m-photo.web.app
+
 ## Build Setup
 
 ```bash
