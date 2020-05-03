@@ -8,7 +8,7 @@
       img(src="~assets/images/index/about/about.JPG")
     .thirdvue
       p
-        R|yota Masuda
+        |Ryota Masuda
         br
         |増田 椋太
         br
@@ -45,6 +45,14 @@ export default {
       justify-content center
       margin-top 2vh
       font-size 2rem
+      animation fadein 2s ease 0s 1 normal
+
+    @keyframes fadein
+      0% 
+        opacity:0
+      100% 
+        opacity:1
+
   .secondvue img
     width 100vw
     vertical-align bottom
@@ -62,6 +70,13 @@ export default {
     width 90%
     letter-spacing 2px
     margin 5% auto
+    animation fadein 2s ease 0s 1 normal
+
+  @keyframes fadein
+    0% 
+      opacity:0
+    100% 
+      opacity:1
 
   .fourthtitle p
     margin-top 10%
