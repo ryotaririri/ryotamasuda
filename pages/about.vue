@@ -3,7 +3,7 @@
   .area
     .firstvue
       .firsttext
-        p About
+        p.subfont About
     .secondvue
       img(src="~assets/images/index/about/about.JPG")
     .thirdvue
@@ -22,7 +22,7 @@
         |平日はWebディレクターとして企業HPの制作・監修を務めながら、2016年12月、株式会社ラブグラフに関西Lovegrapherとして登録。
         |これまで180組以上のゲストを撮影、今日に至る。
     .Performance-title
-      p Performance
+      p.subfont Performance
     .Performance-list
       ul.Performance-list
         li
@@ -44,7 +44,7 @@
         li
           |ラブグラフアカデミー講師
     .skill-tittle
-      p Skill
+      p.subfont Skill
     .skill-list
       ul.skill-list
         li
@@ -82,13 +82,15 @@ export default {
 <style scoped lang="stylus">
 .area
   .firstvue
-    .firsttext p
+    .firsttext
       position relative
       display flex
       justify-content center
       margin-top 2vh
       font-size 2rem
       animation fadein 2s ease 0s 1 normal
+      p.subfont
+        font-family: Antro;
 
     @keyframes fadein
       0% 
@@ -121,12 +123,14 @@ export default {
     100% 
       opacity:1
 
-  .Performance-title p
+  .Performance-title
     margin-top 10%
     width 100%
     font-size 2rem
     text-align center
     animation fadein 2s ease 0s 1 normal
+    p.subfont
+      font-family: Antro;
 
   @keyframes fadein
     0% 
@@ -150,11 +154,13 @@ export default {
       padding 0 5%
       list-style-type none
 
-  .skill-tittle p
+  .skill-tittle
     margin-top 10%
     width 100%
     font-size 2rem
     text-align center
+    p.subfont
+      font-family: Antro;
 
   .skill-list
     width 80%
