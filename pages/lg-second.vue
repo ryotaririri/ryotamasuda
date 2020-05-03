@@ -98,6 +98,7 @@ export default {
     position relative
     display flex
     justify-content center
+    margin-top 2vh
   .secondtext
     width 100%
     height 10vh
@@ -113,6 +114,7 @@ export default {
       width 100vw
       overflow hidden
   .thirdvue
+    padding 20px
     a
       text-decoration none
       position relative
