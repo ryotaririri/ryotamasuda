@@ -21,11 +21,54 @@
         |大学にて宗教学や心理学を専攻後、大阪市内のHP制作会社に勤務。
         |平日はWebディレクターとして企業HPの制作・監修を務めながら、2016年12月、株式会社ラブグラフに関西Lovegrapherとして登録。
         |これまで180組以上のゲストを撮影、今日に至る。
-    .fourthtitle
-      p 実績
-
-
-
+    .Performance-title
+      p Performance
+    .Performance-list
+      ul.Performance-list
+        li
+          |2020.2　アカデミー講師賞
+        li
+          |2020.2　PV賞
+        li
+          |2019.8　月間作品 優秀賞
+        li
+          |2019.3　月間作品 優秀賞
+        li
+          |2019.2　Best Fun賞
+        li
+          |Platinumラブグラファー(社内上位10％)
+        li
+          |LGC(ラブグラファー養成講座) チーフトレーナー
+        li
+          |関西エリアマネージャー
+        li
+          |ラブグラフアカデミー講師
+    .skill-tittle
+      p Skill
+    .skill-list
+      ul.skill-list
+        li
+          |写真撮影・編集
+        li
+          |動画撮影・編集
+        li
+          |Web開発
+          ul.inner-list
+            li
+              |HTML.CSS
+    .link-icon
+      .twitter
+        a(href="https://twitter.com/ryota__masuda")
+          img(src="~assets/images/index/twitter.png")
+          p Twitter
+      .instagram
+        a(href="https://www.instagram.com/ririri.photograph")
+          img(src="~assets/images/index/instagram.png")
+          p instagram
+      .lovegraph
+        a(href="https://lovegraph.me/photographers/ri-ri-ri")
+          img(src="~assets/images/index/lovegraph.png")
+          p lovegraph
 </template>
 
 <script>
@@ -78,10 +121,77 @@ export default {
     100% 
       opacity:1
 
-  .fourthtitle p
+  .Performance-title p
+    margin-top 10%
+    width 100%
+    font-size 2rem
+    text-align center
+    animation fadein 2s ease 0s 1 normal
+
+  @keyframes fadein
+    0% 
+      opacity:0
+    100% 
+      opacity:1
+
+  .Performance-list
+    width 80%
+    letter-spacing 2px
+    font-size .8rem
+    padding 0
+    margin 5% auto
+
+  ul.Performance-list
+    margin 5% auto
+    border-top 1px solid #283246
+    border-bottom 1px solid #283246
+    li
+      margin 3% auto
+      padding 0 5%
+      list-style-type none
+
+  .skill-tittle p
     margin-top 10%
     width 100%
     font-size 2rem
     text-align center
 
+  .skill-list
+    width 80%
+    letter-spacing 2px
+    font-size .8rem
+    padding 0
+    margin 5% auto
+
+  ul.skill-list
+    margin 5% auto
+    border-top 1px solid #283246
+    border-bottom 1px solid #283246
+    li
+      margin 3% auto
+      padding 0 5%
+      list-style-type none
+  
+  .twitter
+    margin-top 10%
+
+  .twitter
+  .instagram
+  .lovegraph
+    height 10vh
+
+    img
+      width 30px
+      height 30px
+    p
+      margin-top 0.5%
+      margin-left 10%
+
+  a
+    display flex
+    justify-content flex-start
+    width 25%
+    color black
+    text-decoration none
+    margin 0 auto
 </style>
