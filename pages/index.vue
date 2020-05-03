@@ -64,6 +64,7 @@ export default {
   
   img
     width 7vw
+    height 7vh
   p
     margin-top 0.5%
     margin-left 10%
