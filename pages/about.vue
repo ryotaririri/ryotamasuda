@@ -17,10 +17,7 @@
         br
         br
         br
-        |1992年福岡県生まれ。
-        |大学にて宗教学や心理学を専攻後、大阪市内のHP制作会社に勤務。
-        |平日はWebディレクターとして企業HPの制作・監修を務めながら、2016年12月、株式会社ラブグラフに関西Lovegrapherとして登録。
-        |これまで180組以上のゲストを撮影、今日に至る。
+        |1992年福岡県生まれ。大学にて宗教学や心理学を専攻後、大阪市内のHP制作会社に勤務。平日はWebディレクターとして企業HPの制作・監修を務めながら、2016年12月、株式会社ラブグラフに関西Lovegrapherとして登録。これまで180組以上のゲストを撮影、今日に至る。
     .Performance-title
       p.subfont Performance
     .Performance-list
@@ -48,27 +45,31 @@
     .skill-list
       ul.skill-list
         li
-          |写真撮影・編集
+          |写真撮影|編集
+          ul.inner-list
+            li
+              |Canon 5D markⅣ
+              br
+              |Photoshop
+              br
+              |Lightroom
         li
-          |動画撮影・編集
+          |動画撮影|編集
+          ul.inner-list
+            li
+              |Premiere　pro
+        li
+          |デザイン
+          ul.inner-list
+            li
+              |Illustrator
         li
           |Web開発
           ul.inner-list
             li
               |HTML.CSS
-    .link-icon
-      .twitter
-        a(href="https://twitter.com/ryota__masuda")
-          img(src="~assets/images/index/twitter.png")
-          p Twitter
-      .instagram
-        a(href="https://www.instagram.com/ririri.photograph")
-          img(src="~assets/images/index/instagram.png")
-          p instagram
-      .lovegraph
-        a(href="https://lovegraph.me/photographers/ri-ri-ri")
-          img(src="~assets/images/index/lovegraph.png")
-          p lovegraph
+        li
+          |他　Web開発ディレクション業務
 </template>
 
 <script>
@@ -177,27 +178,8 @@ export default {
       margin 3% auto
       padding 0 5%
       list-style-type none
-  
-  .twitter
-    margin-top 10%
 
-  .twitter
-  .instagram
-  .lovegraph
-    height 10vh
-
-    img
-      width 30px
-      height 30px
-    p
-      margin-top 0.5%
-      margin-left 10%
-
-  a
-    display flex
-    justify-content flex-start
-    width 25%
-    color black
-    text-decoration none
-    margin 0 auto
+  ul.inner-list
+    margin 2% auto
+    padding 0 5%
 </style>

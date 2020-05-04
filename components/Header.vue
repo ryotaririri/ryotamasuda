@@ -70,22 +70,26 @@ span
 
 .is-active .nav-wrap
   opacity 1
-  z-index 9998
+  z-index 999
 
 ul.gnav
   list-style none
   position relative
   margin 20%
   padding 0
-  z-index 9999
+  z-index 700
   li
     text-align center
+    position relative
+    z-index 1000
     a
       text-decoration none
       color white
+      position relative
+      z-index 1200
 
 .nav-bg
-  position fixed
+  position absolute
   left 0
   top 0
   width 100vw
@@ -95,5 +99,7 @@ ul.gnav
 
 .is-active .nav-bg
   background-color rgba(0,0,0,0.85)
+  position absolute
+  z-index 600
 
 </style>

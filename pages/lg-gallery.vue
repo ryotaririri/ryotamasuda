@@ -2,9 +2,9 @@
 .container
   .area
     .firstvue
-      .firsttext
+      .Lovegraph-title
         p Lovegraph gallery
-      .secondtext
+      .Scroll-title
         p Scroll
         .arrow
   .area
@@ -58,12 +58,18 @@ export default {
     width 100%
     scroll-snap-align start
     text-align center
-    .firsttext p
+    .Lovegraph-title p
       position absolute
-      top 30%
+      top 40%
+      font-size 1.2rem
+      letter-spacing 3px
+      padding 5px 10px
       left 50%
       transform translate(-50%,-50%)
-    .secondtext
+      border-top 1px solid #283246
+      border-bottom 1px solid #283246
+
+    .Scroll-title
       width 100%
       height 50vh
       position relative
@@ -73,6 +79,7 @@ export default {
         height 100vh
         display flex
         justify-content center
+
     .arrow
       position absolute
       top 30em

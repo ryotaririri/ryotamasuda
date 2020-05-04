@@ -3,7 +3,7 @@
     .firstvue
       img(src="~assets/images/index/indextop.JPG")
       p Ryota Masuda
-    .secondvue
+    .link-icon
       .twitter
         a(href="https://twitter.com/ryota__masuda")
           img(src="~assets/images/index/twitter.png")
@@ -37,6 +37,7 @@ export default {
   height 100vh
   position relative
   overflow hidden
+  z-index 90
   animation fadein 2s ease 0s 1 normal
 
 @keyframes fadein
@@ -53,27 +54,34 @@ export default {
   opacity 0
   animation fadein 3s ease 3s 1 normal
   animation-fill-mode forwards
+  font-family: Antro;
+  font-size 25px
+  z-index 95
 
 .twitter
   margin-top 10%
-
-.twitter
-.instagram
-.lovegraph
-  height 10vh
   
-  img
-    width 30px
-    height 30px
-  p
-    margin-top 0.5%
-    margin-left 10%
+.link-icon
+  position relative
+  z-index 200
 
-a
-  display flex
-  justify-content flex-start
-  width 25%
-  color black
-  text-decoration none
-  margin 0 auto
+  .twitter
+  .instagram
+  .lovegraph
+    height 10vh
+    
+    img
+      width 30px
+      height 30px
+    p
+      margin-top 0.5%
+      margin-left 10%
+    
+  a
+    display flex
+    justify-content flex-start
+    width 25%
+    color black
+    text-decoration none
+    margin 0 auto
 </style>
