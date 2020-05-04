@@ -10,23 +10,23 @@
   .area
     .secondvue
       nuxt-link(to="/lg-first")
-        img(src="~assets/images/index/lgarea/lgfirst/firsttop.JPG")
+        img(src="~assets/images/index/lgarea/lgfirst/top.JPG")
   .area
     .secondvue
       nuxt-link(to="/lg-second")
-        img(src="~assets/images/index/lgarea/lgsecond/secondtop.JPG")
+        img(src="~assets/images/index/lgarea/lgsecond/top.JPG")
   .area
     .secondvue
       nuxt-link(to="/lg-third")
-        img(src="~assets/images/index/lgarea/lgthird/thirdtop.JPG")
+        img(src="~assets/images/index/lgarea/lgthird/top.JPG")
   .area
     .secondvue
       nuxt-link(to="/lg-fourth")
-        img(src="~assets/images/index/lgarea/lgfourth/fourthtop.JPG") 
+        img(src="~assets/images/index/lgarea/lgfourth/top.JPG") 
   .area
     .secondvue
       nuxt-link(to="/lg-fifth")
-        img(src="~assets/images/index/lgarea/lgfifth/fifthtop.JPG")
+        img(src="~assets/images/index/lgarea/lgfifth/top.JPG")
       
 </template>
 
